@@ -1,0 +1,403 @@
+/*Google Fonts Poppins 100-900*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #EED40C;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+.close{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    font-size: 35px;
+}
+
+.white{
+    width: 100%;
+    height: 60px;
+    background-color: #FFF;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+header{
+    width: 100%;
+    height: 600px;
+    background: #ffe259;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(186, 22%, 26%, 0.618), hsla(58, 27%, 72%, 0.618)) , url(background.jpg);
+    background: linear-gradient(to right, hsla(186, 22%, 26%, 0.618), hsla(58, 27%, 72%, 0.618)) , url(background.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+
+nav > a{
+    color: #efefff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+nav > a:hover{
+    color: #111;
+    border-bottom: 3px solid #111;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.textos-header h1,h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    color: #FFF;
+}
+
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 60%;
+}
+
+.sobre-nosotros .contenido-textos {
+    margin-top: 60px;
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 10px;
+}
+
+.contenido-textos h3 span {
+    background-color: #EED40C;
+    display: inline-block;
+    color: #111;
+    padding: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin: 5px;
+}
+
+.contenido-textos p {
+    padding: 0px 0px 30px 15px;
+    margin-left: 20px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.portafolio{
+    background-color: #f2f2f2;
+}
+
+.galeria-port{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port {
+    width: 250px;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.imagen-port img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(0, 0, 0, .7);
+    transition: all .4s ease;
+}
+
+.imagen-port:hover  .hover-galeria{
+    transform: scale(1);
+}
+
+.cards {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #fbe11d;
+    transition: all .4s ease;
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .6);
+    padding: 50px;
+}
+
+.card > img{
+    width: 200px;
+    object-fit: cover;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    display: block;
+    background-color: #FFF;
+}
+
+.open{
+    transition: all .4s ease;
+    visibility: visible;
+}
+
+.card h4{
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.card p {
+    font-size: 15px;
+    font-weight: 00;
+    width: 75%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+
+.about-services {
+    background-color: #F2F2F2;
+    padding-bottom: 30px;
+}
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.servicio-ind p{
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+footer{
+    background-color: #EED40C;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #111;
+}
+
+.content-footer h4{
+    color: #111;
+    text-align: center;
+    padding-bottom: 5px;
+    margin: 0 0 0 10px;
+    border-bottom: 2px solid #111;
+}
+
+.content-footer {
+    text-align: center;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 12px;
+    background-color: #111;
+    color: #FFF;
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        background-position: center;
+
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us img{
+        width: 100%;
+    }
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 80%;
+        margin-bottom: 25px;
+    }
+
+    .content-footer{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (width < 600px) {
+    .textos-header h1{
+        font-size: 30px;
+    }
+
+    .textos-header h2{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    nav {
+        flex-direction: column;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .4s ease;
+        visibility: collapse;
+        background-color: #FFF;
+        margin-bottom: 10px;
+        height: 50vh;
+    }
+
+    .titulo{
+        position: relative;
+        top: 10px;
+    }
+    nav > a{
+        color: #111;
+    }
+
+    .textos-header h1,h2{
+        position: relative;
+        top: -200px;
+    }
+
+    .titulo-final{
+        top: 50px;
+    }
+
+    footer{
+        position: relative;
+        top: 50px;
+    }
+
+
+}
+
+@media screen and (max-width: 380px) {
+    .textos-header h1{
+        font-size: 20px;
+    }
+
+    .textos-header h2{
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .content-footer{
+        font-size: 10px;
+    }
+
+    .contenido-textos h3{
+        font-size: 15px;
+    }
+}
